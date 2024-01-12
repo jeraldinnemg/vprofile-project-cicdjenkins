@@ -5,7 +5,7 @@ def COLOR_MAP = [
 pipeline {
     agent any
     tools {
-        maven "MAVEN1"
+        maven "MAVEN3"
         jdk "OracleJDK8"
     }
     environment {
@@ -24,7 +24,7 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                sh 'mvn -s settings.xml -DskipTests install'
+                sh 'mvn1 -s settings.xml -DskipTests install'
             }
             post {
                 success {
