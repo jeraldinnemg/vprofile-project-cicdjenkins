@@ -8,5 +8,7 @@
 #   modified: icluding buildjob
 #   modified: pom.xml
 #   modified: setting.xml
-#   modified: updated pipeline iwth unit test and code analysis
+#   modified: updated pipeline with unit test and code analysis
+#   modified: updated pipeline with sonar analysis stage
+#   modified: updated quality gate sonarque
 
