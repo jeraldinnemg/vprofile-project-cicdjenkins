@@ -12,4 +12,5 @@
 #   modified: updated pipeline with sonar analysis stage
 #   modified: updated quality gate sonarque
 #   modified: updated timestamp plugin artifact
+#   modified: updated slack (post)
 
