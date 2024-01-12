@@ -68,8 +68,10 @@ Thanks Rox for giving me the free credits to keep using AWS to develop this proj
 ![nexus](images/nexusserver.png)
 - Sonarqube Scanner
 ![sonar](images/sonarqubescanner.png)
+- Enforcing pipeline failure to check notification
+![pipeline](images/pipeline-failure.png)
 - Slack notification
-![RabbitMQ](images/pipeline-failure.png)
+![slack](images/slacknotifications.png)
 
 
 
