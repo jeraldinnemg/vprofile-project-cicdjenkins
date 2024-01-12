@@ -11,4 +11,5 @@
 #   modified: updated pipeline with unit test and code analysis
 #   modified: updated pipeline with sonar analysis stage
 #   modified: updated quality gate sonarque
+#   modified: updated timestamp plugin artifact
 
