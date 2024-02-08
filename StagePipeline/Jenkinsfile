@@ -10,11 +10,11 @@ pipeline {
     }
     environment {
         SNAP_REPO = 'vprofile-snapshot'
-        NEXUS_USER = ''
-        NEXUS_PASS = ''
+        NEXUS_USER = 'admin'
+        NEXUS_PASS = 'admin123'
         RELEASE_REPO = 'vprofile-release'
         CENTRAL_REPO = 'vpro-maven-central'
-        NEXUSIP = ''
+        NEXUSIP = '172.31.0.127'
         NEXUSPORT = '8081'
         NEXUS_GRP_REPO = 'vpro-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
@@ -26,18 +26,6 @@ pipeline {
 
     }
     stages {
-        stage('Retrieve Secrets') {
-            steps {
-                script {
-                    // Retrieve secrets from AWS Secrets Manager
-                    withAWS(credentials: 'aws-credentials-id', region: 'aws-region') {
-                        NEXUS_USER = sh(script: "aws secretsmanager get-secret-value --secret-id 'nexus-user-secret-id' --query 'SecretString' --output text", returnStdout: true).trim()
-                        NEXUS_PASS = sh(script: "aws secretsmanager get-secret-value --secret-id 'nexus-pass-secret-id' --query 'SecretString' --output text", returnStdout: true).trim()
-                        NEXUSIP = sh(script: "aws secretsmanager get-secret-value --secret-id 'nexus-ip-secret-id' --query 'SecretString' --output text", returnStdout: true).trim()
-                    }
-                }
-            }
-        }
         stage('Build'){
             steps {
                 sh 'mvn -s settings.xml -DskipTests install'
