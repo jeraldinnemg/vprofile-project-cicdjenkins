@@ -62,8 +62,11 @@ One of the benefits of working at EY is Udemy for Business. I enrolled in the De
 
 
 ## Continuous delivery steps images
-- CD Diagram
+- CD Pipeline Diagram
 ![Diagram](images/Continuous-delivery-JavaWebApplication.drawio.png)
+- CD Diagram
+![Diagram](images/CD-Javaapplication.drawio.drawio.png)
+
 - EC2-servers on AWS
 ![AWS](images/EC2-instances.png)
 - AWS ECR
