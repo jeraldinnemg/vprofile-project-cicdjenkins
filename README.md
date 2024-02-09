@@ -1,9 +1,7 @@
 # Building my DevOps Portfolio 🚀
 
-## Project 5: Continuous Integration using Jenkins pipeline
-
+## Project 7: Continuous Delivery using Jenkins & tools.
 One of the benefits of working at EY is Udemy for Business. I enrolled in the DevOps Projects | 20 Real-Time DevOps Projects course to enhance my DevOps portfolio and I’m sharing this process for educational purposes.
-Thanks Rox for giving me the free credits to keep using AWS to develop this project! Thanks for your support to the DevOps Community worldwide. 
 
 
 ### Scenario
@@ -21,7 +19,7 @@ Thanks Rox for giving me the free credits to keep using AWS to develop this proj
 ❌ Inter team dependencies.
 
 
-###  Solution: Continuous Integration
+###  Solution: Continuous Delivery
 - ♾️ Build and test for every commit.
 - ♾️ Automated process.
 - ♾️ Notify for every build status.
@@ -41,37 +39,60 @@ Thanks Rox for giving me the free credits to keep using AWS to develop this proj
 - 🛠️ Checkstyle.
 - 🛠️ Slack.
 - 🛠️ Nexus Sonarqube.
-- 🛠️ AWS EC2.
+- 🛠️ Docker
+- 🛠️ AWS ECR
+- 🛠️ AWS ECS
+- 🛠️ AWS CLI
 
 ### Steps
-⏭️ Login to AWS Account.
-⏭️ Create key pair.
-⏭️ Create Security group (Jenkins, Nexus & Sonarqube).
-⏭️ Create EC2 Instances with userdata (Jenkins, Nexus & Sonarqube).
-⏭️ Post installation (a. Jenkins set up and plugins b. Nexus setup & repository setup c. Sonarqube login test).
-⏭️ Create a github repo and migrate code.
-⏭️ Build job with nexus integration.
-⏭️ Github webhook.
-⏭️ Sonarqube server integration stage.
-⏭️ Nexus artifact upload stage.
-⏭️ Integrate slack notification
+- ⏭️Update github webhook.
+- ⏭️Copy Docker Files from vprofile repo to my repo.
+- ⏭️Prepare two separate Jenkinsfile for stagin and production
+- ⏭️AWS Steps
+-   ⏭️ IAM, ECR, repo setup
+- ⏭️Jenkins steps
+-   ⏭️Install plugins
+-       ⏭️Amazon ECR
+-       ⏭️ Docker, Docker build & publish
+-       ⏭️ Pipeline: AWS Steps
+- ⏭️ Install docker engine and aws cli on jenkins server
+- ⏭️Write Jenkinsfile for Build and publish image to ECR
+- ⏭️ECS setup
+-   ⏭️Cluster, Task definition, Service
+- ⏭️Code for deploy docker image to ECS
+- ⏭️ Repeat the steps for prod ECS Cluster
+- ⏭️Promoting docker image for production.
 
 
-## Continuous integration steps
-- CI Diagram
-![Diagram](images/CI-jenkins.drawio.png)
+
+## Continuous delivery steps images
+- CD Diagram
+![Diagram](images/Continuous-delivery-JavaWebApplication.drawio.png)
 - EC2-servers on AWS
 ![AWS](images/EC2-instances.png)
-- Jenkins Server
-![Jenkins](images/jenkins.png)
+- AWS ECR
+![ECR](images/aws-ecr.png)
+- AWS ECS
+![Cluster](images/aws-cluster.png)
+- AWS ECS Service
+![Service](images/aws-cluster-service.png)
+- AWS Security groups
+![SG](images/securitygroups.png)
 - Nexus server
 ![nexus](images/nexusserver.png)
 - Sonarqube Scanner
 ![sonar](images/sonarqubescanner.png)
-- Enforcing pipeline failure to check notification
-![pipeline](images/pipeline-failure.png)
+- CICD Pipeline
+![pipelinecicd](cicd-pipeline.png)
+- CICD Pipeline (deploy to ECS stage)
+![pipelineec2](cicd-pipeline-deploytoecs.png)
+- Production pipeline
+![pipelineprod](images/prod-pipeline.png)
+- Vprofile app hosted
+![app](images/avproaastage-hosted.png)
 - Slack notification
-![slack](images/slacknotifications.png)
+![slack](images/slack-notifications.png)
+
 
 
 
