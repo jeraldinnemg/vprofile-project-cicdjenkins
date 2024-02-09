@@ -10,11 +10,11 @@ pipeline {
     }
     environment {
         SNAP_REPO = 'vprofile-snapshot'
-        NEXUS_USER = credentials('NEXT_USER')
-        NEXUS_PASS = credentials('NEXT_PASS')
+        NEXUS_USER = ''
+        NEXUS_PASS = ''
         RELEASE_REPO = 'vprofile-release'
         CENTRAL_REPO = 'vpro-maven-central'
-        NEXUSIP = credentials('NEXUSIP')
+        NEXUSIP = ''
         NEXUSPORT = '8081'
         NEXUS_GRP_REPO = 'vpro-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
@@ -84,6 +84,7 @@ pipeline {
 
         stage("UploadArtifact"){
             steps{
+                withCredentials([usernamePassword(credentialsId: 'NEXT_USER', usernameVariable: 'NEXUS_USER', passwordVariable: 'NEXUS_PASS')])
                 nexusArtifactUploader(
                   nexusVersion: 'nexus3',
                   protocol: 'http',
