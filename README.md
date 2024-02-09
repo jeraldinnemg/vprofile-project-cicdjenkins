@@ -74,10 +74,6 @@ One of the benefits of working at EY is Udemy for Business. I enrolled in the De
 ![Service](images/aws-cluster-service.png)
 - AWS Security groups
 ![SG](images/securitygroups.png)
-- Nexus server
-![nexus](images/nexusserver.png)
-- Sonarqube Scanner
-![sonar](images/sonarqubescanner.png)
 - CICD Pipeline
 ![pipelinecicd](cicd-pipeline.png)
 - CICD Pipeline (deploy to ECS stage)
