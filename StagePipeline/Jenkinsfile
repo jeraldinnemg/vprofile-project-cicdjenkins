@@ -22,7 +22,7 @@ pipeline {
         SONARSCANNER = 'sonarscanner'
         registryCredential = 'ecr:us-west-1:awscreds'
         appRegistry = '038131145711.dkr.ecr.us-west-1.amazonaws.com/vprofileappimg'
-        vprofileRegistry = '038131145711.dkr.ecr.us-west-1.amazonaws.com'
+        vprofileRegistry = 'https://038131145711.dkr.ecr.us-west-1.amazonaws.com'
     }
 
     stages {
