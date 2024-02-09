@@ -51,14 +51,10 @@ One of the benefits of working at EY is Udemy for Business. I enrolled in the De
 - ⏭️AWS Steps
 -   ⏭️ IAM, ECR, repo setup
 - ⏭️Jenkins steps
--   ⏭️Install plugins
--       ⏭️Amazon ECR
--       ⏭️ Docker, Docker build & publish
--       ⏭️ Pipeline: AWS Steps
+-   ⏭️Install plugins: Amazon ECR, Docker, Docker build & publish, Pipeline: AWS Steps
 - ⏭️ Install docker engine and aws cli on jenkins server
 - ⏭️Write Jenkinsfile for Build and publish image to ECR
-- ⏭️ECS setup
--   ⏭️Cluster, Task definition, Service
+- ⏭️ECS setup (Cluster, Task definition, Service)
 - ⏭️Code for deploy docker image to ECS
 - ⏭️ Repeat the steps for prod ECS Cluster
 - ⏭️Promoting docker image for production.
