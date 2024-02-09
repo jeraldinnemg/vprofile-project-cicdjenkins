@@ -75,9 +75,9 @@ One of the benefits of working at EY is Udemy for Business. I enrolled in the De
 - AWS Security groups
 ![SG](images/securitygroups.png)
 - CICD Pipeline
-![pipelinecicd](cicd-pipeline.png)
+![pipelinecicd](images/cicd-pipeline.png)
 - CICD Pipeline (deploy to ECS stage)
-![pipelineec2](cicd-pipeline-deploytoecs.png)
+![pipelineec2](images/cicd-pipeline-deploytoecs.png)
 - Production pipeline
 ![pipelineprod](images/prod-pipeline.png)
 - Vprofile app hosted
