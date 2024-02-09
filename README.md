@@ -93,5 +93,3 @@ One of the benefits of working at EY is Udemy for Business. I enrolled in the De
 - Slack notification
 ![slack](images/slack-notifications.png)
 
-
-#test
